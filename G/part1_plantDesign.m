@@ -9,7 +9,7 @@ params.gamma    = 0.66;       % battery efficiency
 params.max_bin  = 10;
 params.max_bout = 10;
 params.max_B    = 24;
-params.max_gd   = 990;
+params.max_g    = 990;
 
 Ns = 1:10:80;  % how many solar rows you want to buy, each row 25kwh each row has 24 KwH battery
 

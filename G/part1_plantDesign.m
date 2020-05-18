@@ -32,11 +32,11 @@ for N=Ns  % iterate through candidate number of solar rows
         price.peak2 = PC2{mnth}';
         price.peak3 = PC3{mnth}';
     
-        sol{mnth} = solve_lpB(s,d,N,params,price);
+        sol{mnth} = solve_lp(s,d,N,params,price);
        
     end
     
     % save to file
-    save(fullfile('resultsB',sprintf('N%d',N)),'sol')
+    save(fullfile('results',sprintf('N%d',N)),'sol')
 
 end
